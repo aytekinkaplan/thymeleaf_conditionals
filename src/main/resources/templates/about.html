@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Me</title>
+    </head>
+<body>
+<div th:if="${personName eq 'John'}">
+    <h2>John's Biography</h2>
+    <p>John is a software engineer with a passion for building web applications. He graduated from a top university with a degree in computer science and has been working in the tech industry for over a decade. In his free time, John enjoys hiking, playing guitar, and experimenting with new programming languages.</p>
+</div>
+<div th:if="${personName eq 'Maria'}">
+    <h2>Maria's Biography</h2>
+    <p>Maria is a talented artist known for her vibrant and expressive paintings. She discovered her passion for art at a young age and has been creating beautiful works ever since. Maria's art has been exhibited in galleries around the world, and she has won numerous awards for her creativity and originality.</p>
+</div>
+<div th:if="${personName eq 'Fred'}">
+    <h2>Fred's Biography</h2>
+    <p>Fred is an avid traveler who has explored many countries and cultures around the world. He believes that travel broadens the mind and opens up new perspectives. Fred has documented his travels through photography and writing, sharing his experiences with others and inspiring them to embark on their own adventures.</p>
+</div>
+<div th:if="${personName eq 'Michael'}">
+    <h2>Michael's Biography</h2>
+    <p>Michael is a successful entrepreneur who founded several tech startups. His innovative ideas and leadership skills have led to the growth and success of his companies. Michael is passionate about using technology to solve real-world problems and improve people's lives. He is also a mentor to aspiring entrepreneurs, guiding them on their journey to success.</p>
+</div>
+<div th:if="${personName eq 'Yusuf'}">
+    <h2>Yusuf's Biography</h2>
+    <p>Yusuf is a dedicated teacher who is passionate about educating and inspiring young minds. He believes that education is the key to unlocking one's full potential. Yusuf has been teaching for over twenty years and has made a positive impact on the lives of countless students. He is known for his enthusiasm, creativity, and ability to make learning fun and engaging.</p>
+</div>
+</body>
+</html>

@@ -6,10 +6,6 @@
     <title>Conditionals</title>
 </head>
 <body>
-<div th:each="sale : ${sales}">
-    <p th:if="${sale >= 50}">You're in the precious world</p>
-    <p th:if="${sale < 50}">You're not in the precious world</p>
-
-</div>
+    <p th:text="${sales>50}?'You are in the precious world':'You are not in the precious world'"></p>
 </body>
 </html>
