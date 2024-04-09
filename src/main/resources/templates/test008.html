@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Staff List</title>
+    <link th:href="@{/static/test008CSS/test008.css}" rel="stylesheet">
 </head>
 <body>
-    
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Role</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="person : ${people}">
+        <td th:text="${person.name}"></td>
+        <td th:text="${person.age}"></td>
+        <td th:text="${person.role}"></td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
