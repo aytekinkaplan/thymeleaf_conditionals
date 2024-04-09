@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speed Test</title>
+</head>
+<body>
+  <h1 th:text="'Speed: ' +${speed}"></h1>
+
+  <div th:if="${speed > 60}">
+    <a href="https://tenor.com/view/angry-birds-gif-19421060">Angry Birds GIF</a>
+    <iframe class="tenor-gif-embed"
+      data-postid="19421060"
+      data-share-method="host"
+      data-aspect-ratio="1.77778"
+      data-width="100%"
+      src="https://tenor.com/embed.js"
+      frameborder="0"
+      scrolling="no"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <div th:if="${speed <= 60}">
+    <a href="https://tenor.com/view/angry-birds-gif-21606714">Angry Birds GIF</a>
+    <iframe class="tenor-gif-embed"
+      data-postid="21606714"
+      data-share-method="host"
+      data-aspect-ratio="1.79775"
+      data-width="100%"
+      src="https://tenor.com/embed.js"
+      frameborder="0"
+      scrolling="no"
+      allowfullscreen
+    ></iframe>
+  </div>
+</body>
+</html>

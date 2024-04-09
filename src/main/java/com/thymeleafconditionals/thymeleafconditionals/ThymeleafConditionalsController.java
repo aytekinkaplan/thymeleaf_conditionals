@@ -34,4 +34,16 @@ public class ThymeleafConditionalsController {
         model.addAttribute("sales", 30);
         return "test002";
     }
+
+    @GetMapping("/test003")
+    public String test003(Model model) {
+        model.addAttribute("speed", 100);
+        return "test003";
+    }
+
+    @GetMapping("/test004")
+    public String test004(Model model) {
+        model.addAttribute("speed", 100);
+        return "test004";
+    }
 }
