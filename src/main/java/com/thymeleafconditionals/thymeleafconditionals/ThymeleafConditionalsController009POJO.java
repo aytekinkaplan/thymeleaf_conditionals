@@ -1,11 +1,11 @@
 package com.thymeleafconditionals.thymeleafconditionals;
 
-public class ThymeleafConditionalsController9POJO {
+public class ThymeleafConditionalsController009POJO {
     private String item;
     private double revenue;
     private double cost;
 
-    public ThymeleafConditionalsController9POJO(String item, double revenue, double cost) {
+    public ThymeleafConditionalsController009POJO(String item, double revenue, double cost) {
         this.item = item;
         this.revenue = revenue;
         this.cost = cost;

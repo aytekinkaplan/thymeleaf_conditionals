@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Controller
-public class ThymeleafConditionalsController2 {
+public class ThymeleafConditionalsController002 {
     @GetMapping("/test005")
     public String test005(Model model) {
         List<String> colors = Arrays.asList("red", "blue", "green", "yellow");

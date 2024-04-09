@@ -1,17 +1,17 @@
 package com.thymeleafconditionals.thymeleafconditionals;
 
-public class ThymeleafConditionalsController5POJO {
+public class ThymeleafConditionalsController005POJO {
     private String name;
     private int age;
     private String role;
 
-    public ThymeleafConditionalsController5POJO(String name, int age, String role) {
+    public ThymeleafConditionalsController005POJO(String name, int age, String role) {
         this.name = name;
         this.age = age;
         this.role = role;
     }
 
-    public ThymeleafConditionalsController5POJO() {
+    public ThymeleafConditionalsController005POJO() {
     }
 
     public String getName() {

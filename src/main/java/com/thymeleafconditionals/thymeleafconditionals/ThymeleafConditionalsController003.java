@@ -5,7 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class ThymeleafConditionalsController3 {
+public class ThymeleafConditionalsController003 {
 
     @GetMapping("/test006")
     public String test006(Model model) {

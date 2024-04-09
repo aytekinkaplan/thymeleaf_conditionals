@@ -1,11 +1,11 @@
 package com.thymeleafconditionals.thymeleafconditionals;
 
-public class ThymeleafConditionalsController7POJO {
+public class ThymeleafConditionalsController008POJO {
     private String item;
     private double revenue;
     private double cost;
 
-    public ThymeleafConditionalsController7POJO(String item, double revenue, double cost) {
+    public ThymeleafConditionalsController008POJO(String item, double revenue, double cost) {
         this.item = item;
         this.revenue = revenue;
         this.cost = cost;
@@ -40,6 +40,8 @@ public class ThymeleafConditionalsController7POJO {
     }
 
     private double calculateProfit() {
-        return revenue - cost;
+        double profit = revenue - cost;
+        return Math.round(profit * 100.0) / 100.0;
     }
+
 }
