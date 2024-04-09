@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Table</title>
+    <style>
+        /* Tablo stilleri */
+/* Tablo stilleri */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #333;
+    color: #fff;
+}
+
+table th, table td {
+    padding: 8px;
+    border: 1px solid #fff;
+    text-align: left;
+}
+
+/* Başlık hücresi stilleri */
+table th {
+    background-color: #555;
+}
+
+/* Tek satır arka plan renklendirmesi */
+table tbody tr:nth-child(odd) {
+    background-color: #444;
+}
+
+/* Fare üzerine gelindiğinde satır rengini değiştirme */
+table tbody tr:hover {
+    background-color: #666;
+}
+
+    </style>
+</head>
+<body>
+    <h2>Profit Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Revenue</th>
+                <th>Cost</th>
+                <th>Profit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="item : ${goods}">
+                <td th:text="${item.item}"></td>
+                <td th:text="${item.revenue}"></td>
+                <td th:text="${item.cost}"></td>
+                <td th:text="${item.profit}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
