@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spell name</title>
+</head>
+<body>
+    <h2 th:text="${#strings.containsIgnoreCase(name, 'a')}?'A':'Not found'"></h2>
+    <h2 th:text="${#strings.containsIgnoreCase(name, 'h')}?'AH':'Not found'"></h2>
+    <h2 th:text="${#strings.containsIgnoreCase(name, 'm')}?'AHM':'Not found'"></h2>
+    <h2 th:text="${#strings.containsIgnoreCase(name, 'e')}?'AHME':'Not found'"></h2>
+    <h2 th:text="${#strings.containsIgnoreCase(name, 'd')}?'AHMED':'Not found'"></h2>
+    <h2 th:text="${#strings.containsIgnoreCase(name, ' ')}?' ':'Not found'"></h2>
+    <h2 th:text="${#strings.containsIgnoreCase(name, 'Y')}?'AHMED Y':'Not found'"></h2>
+    <h2 th:text="${#strings.containsIgnoreCase(name, 'U')}?'AHMED YU':'Not found'"></h2>
+    <h2 th:text="${#strings.containsIgnoreCase(name, 'S')}?'AHMED YUS':'Not found'"></h2>
+    <h2 th:text="${#strings.containsIgnoreCase(name, 'U')}?'AHMED YUSU':'Not found'"></h2>
+    <h2 th:text="${#strings.containsIgnoreCase(name, 'F')}?'AHMED YUSUF':'Not found'"></h2>
+    <h2 th:text="${#strings.containsIgnoreCase(name, 'X')}?'AHMED YUSUF':'SAY MY NAME'"></h2>
+    <h2 th:text="${#strings.containsIgnoreCase(name, 'Y')}?'AHMED YUSUF':'THIS IS NOT MY NAME'"></h2>
+    <h2 th:text="${#strings.containsIgnoreCase(name, 'Z')}?'AHMED YUSUF':'THIS IS NOT MY NAME'"></h2>
+</body>
+</html>
