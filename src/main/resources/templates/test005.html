@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Selector</title>
+</head>
+<body>
+<h1>Select Background Color</h1>
+<form action="#" th:action="@{/}" th:object="${selectedColor}" method="post">
+    <select name="selectedColor" th:value="${selectedColor}">
+        <option th:each="color : ${colors}" th:value="${color}" th:text="${color}"></option>
+    </select>
+    <button type="submit">Apply</button>
+</form>
+
+<div th:switch="${selectedColor}">
+    <p th:case="'red'" style="background-color: red;">This is red</p>
+    <p th:case="'blue'" style="background-color: blue;">This is blue</p>
+    <p th:case="'green'" style="background-color: green;">This is green</p>
+    <p th:case="'yellow'" style="background-color: yellow;">This is yellow</p>
+    <p th:case="*" style="background-color: white;">Default color</p>
+</div>
+</body>
+</html>

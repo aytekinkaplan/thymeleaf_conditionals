@@ -5,7 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class ThymeleafConditionalsController {
+public class ThymeleafConditionalsController1 {
     @GetMapping("/")
     public String index(Model model) {
         int[] sales = {100, 75, 50, 25};
@@ -46,4 +46,7 @@ public class ThymeleafConditionalsController {
         model.addAttribute("speed", 100);
         return "test004";
     }
+
+
+
 }
